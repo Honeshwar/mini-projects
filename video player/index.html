@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- manifest attribute is older way , in html5 we use link tag -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.appcache">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="box">
+    <div class="wrapper">
+        <div class="progressBox">
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <ul class="controls">
+            <li class="controls1">
+                <div class="volume">
+                    <label for="volume-slider"><i class="fa fa-volume-up"></i></label>
+                <input type="range" name="" id="volume" min="0" max="100">
+                </div>
+                <div class="timer">  
+                        <span>00:00</span>
+                       / <span>3:30</span>
+                </div>
+
+            </li>
+    
+            
+            <li class="controls2">
+                <i title="backward" class="fa fa-backward"></i>
+                <i title="play/pause" class="fa fa-play"></i>
+                <i title="forward" class="fa fa-forward"></i>
+            </li>
+            <li class="controls3">
+               <i class="fa fa-cog"></i>
+               <i class="fa fa-window-restore"></i>
+               <i class="fa fa-arrows-alt"></i>
+            </li>
+        </ul>
+    </div>
+    <video src=""  loop ></video>
+    <div class="largePlayBtn">
+        <i title="play/pause" class="fa fa-play"></i>
+    </div>
+
+    <ul class="dropdown">
+        <li>3</li>
+        <li>2</li>
+        <li class="select">Default Value(1)</li>
+        <li>.5</li>
+        <li>.1</li>
+    </ul>
+   </div>
+
+   <script src="https://kit.fontawesome.com/f595980e36.js" crossorigin="anonymous"></script>
+   <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- list is best option to make -->

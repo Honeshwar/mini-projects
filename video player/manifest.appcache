@@ -1,0 +1,10 @@
+CACHE:
+index.html
+script.js
+
+
+NETWORK:
+network.html
+
+FALLBACK:
+offline.html fallback.html

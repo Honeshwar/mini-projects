@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Frontend</title>
+  <style>
+    /* Add your CSS styling here */
+    .weather-container {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .weather-icon {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-container">
+    <h2>Current Weather</h2>
+    <div id="weather-icon"></div>
+    <p id="temperature"></p>
+    <p id="condition"></p>
+  </div>
+
+  <script>
+    const apiKey = '0259dc96fb66cf3d5392191c67fa9e24';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=ada87b8d7efc74d2a42e08f4916f035f&units=metric`;
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const temperature = data.main.temp;
+        const condition = data.weather[0].description;
+        const weatherIconCode = data.weather[0].icon;
+        const weatherIconUrl = `http://openweathermap.org/img/wn/${weatherIconCode}.png`;
+
+        document.getElementById('temperature').textContent = `Temperature: ${temperature}°C`;
+        document.getElementById('condition').textContent = `Condition: ${condition}`;
+        document.getElementById('weather-icon').innerHTML = `<img src="${weatherIconUrl}" class="weather-icon" alt="Weather Icon">`;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+        document.getElementById('weather-container').innerHTML = 'Error fetching weather data. Please try again later.';
+      });
+  </script>
+</body>
+</html>

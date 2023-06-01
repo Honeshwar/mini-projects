@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- manifest attribute is older way , in html5 we use link tag -->
+<html lang="en" manifest="manifest.appcache">
+<head>
+   
+    <title>Audio Player</title>
+   <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- flex -->
+  <div class="app">
+    <div class="box">
+        <div class="banner">
+            <!-- <div></div> -->
+            <img  src="https://source.unsplash.com/De8wMYoSSBc" class="logo">
+            <div class="song-detail">
+                <h2>A Good Song</h2>
+                <p>Hod_dj</p>
+            </div>
+            <i title="setting" class="fa fa-ellipsis-v"></i>
+        </div>
+        <div class="controls">
+            <div class="controls-btn">
+                <i title="shuffle" class="fa fa-random"></i>
+                <i title="play backward " class="fa fa-hand-o-left"></i>
+                <i title="play" class="fa fa-play"></i>
+                <i title="play forward" class="fa fa-hand-o-right"></i>
+                <i title="redo,repeat same song" class="fa fa-repeat"></i>
+                <!-- <i title="pause" class="fa fa-pause"></i>an also add using class -->
+                <!-- <i title="" class="fa fa-backward"></i> -->
+                <!-- <i title="" class="fa fa-forward"></i> -->
+            </div>
+            <div class="progress">
+                <!-- <input type="range" name="" value="0" id="slider" min="0" max="100"> -->
+                <!-- <div class="thumb"></div> -->
+                <div class="bar"></div>
+            </div>
+            <div class="progress-timer">
+                <small>0:00</small>
+                <small>3:25</small>
+            </div>
+            <div class="like-unlike">
+                <i title="like an song" class="fa fa-heart-o"></i>
+                <div class="volume">
+                    <label for="volume-slider"><i class="fa fa-volume-up"></i></label>
+                    <input type="range" name="" value="0" id="volume-slider" min="0" max="100">
+                </div>
+                <i title="Unlike an song" class="fa fa-thumbs-o-down"></i>
+            </div>
+        </div>
+
+        <div class="audio-player-controls">
+
+        </div>
+   </div>
+  </div>
+
+   <!-- grid -->
+    <!-- <div class="box">
+        <div class="container">
+            <img  src="https://source.unsplash.com/De8wMYoSSBc" class="logo">
+           <div class="song-details">
+                <h2>A Good Song</h2>
+                <p>Hod_dj</p>
+           </div>
+            <i class="fa fa-ellipsis-v"></i>
+           <div class="controls">
+                <i class="fa fa-random"></i>
+                <i class="fa fa-hand-o-left"></i>
+                <i class="fa fa-play" id="play"></i>
+                <i class="fa fa-hand-o-right"></i>
+                <i class="fa fa-pause"></i>
+                <i class="fa fa-backward"></i>
+                <i class="fa fa-forward"></i>
+                <i class="fa fa-repeat"></i>
+                <progress value="0" max="100">32%</progress>
+                <span id="timer-start">0:00</span>
+                <span id="timer-end">0:00</span>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-thumbs-o-down"></i>
+           </div>
+        </div>
+    </div> -->
+<!-- <audio src="./assets/image/stay.jpg"></audio> -->
+
+    <script src="https://kit.fontawesome.com/f595980e36.js" crossorigin="anonymous"></script>
+    <script src="./audio2.js"> </script>
+</body>
+</html>

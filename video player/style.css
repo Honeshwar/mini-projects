@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    max-width: 900px;
+    width: 98%;
+    /* border:solid black; */
+    position: relative;
+    color:rgb(255, 253, 253);
+    
+    border-radius: 10px;
+    margin:0 auto;
+    background-color: black;
+    box-shadow:  0 0 3px 3px rgb(170, 167, 167);
+    margin-top: 100px;
+
+
+}
+
+.box video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* border:solid black; */
+
+    z-index: 1;
+
+}
+
+.progressBox{
+    background-color: rgba(0, 0, 0, 0.514);
+    padding :10px 0;
+}
+.progressBar{
+    width: 100%;
+    height:8px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;;
+   
+    box-shadow: inset 0 0 2px 2px rgb(221, 220, 220);
+    /* border-radius: 10px; */
+
+    /* opacity: .7; */
+  
+}
+.progress{
+    width: 0px;
+    height:100%;
+    background-color: rgb(10, 136, 240); 
+    box-shadow: inset 0 0 .8px .5px rgb(3, 60, 107); 
+    /* border-radius: 10px; */
+
+    position: relative;
+}
+.progress::after{
+    content: "";
+    width: 15px;
+    height:15px;
+    background-color: rgb(10, 136, 240); 
+    box-shadow:  0 0 1px 3px rgb(11, 106, 184); 
+    border-radius: 10px;
+    position:absolute ;
+    top: -3.7999999999999983px;
+    right:-6px
+}
+
+.controls{
+    width: 100%;
+    height:50px;
+    padding: 0px 10px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    /* border:solid rgb(6, 173, 90); */
+}
+
+.controls1,.controls2,.controls3{
+    /* border:solid rgb(8, 8, 8); */
+    list-style: none;;
+}
+
+.volume{
+   width: 50%; 
+   /* border: solid; */
+
+}
+#volume{
+    width: 70%;
+}
+
+.controls1{
+    width: 200px;
+    display: flex;
+    align-items: center;
+
+}
+.timer{
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+}
+
+.controls2{
+    width: 130px;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.controls3{
+    font-size: 1.2rem;
+    width: 100px;
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+
+    /* position: relative; */
+}
+
+
+i:hover{
+    /* font-size: 1.3rem;; */
+    color:aqua;
+    text-indent: 1px;
+    /* list-style: list-style-type', 'list-style-position' and 'list-style-image'; */
+}
+
+
+.dropdown{
+   
+    z-index: 5;
+    position:absolute;
+    background-color: rgb(204, 201, 201);
+     width: 150px;
+     /* height: 100px;; */
+    list-style: none;
+    color: rgb(255, 252, 252);
+    font-family: monospace;
+    border-radius: 10px;
+
+    top: 300px;
+    right: 30px;
+    box-shadow: 0  0 0px 5px white;
+    padding: 5px 10px;
+    /* overflow-y: scroll; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    display: none;
+}
+.dropdown li{
+    padding: 15px;
+    border: solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+    width: fit-content;
+   
+}
+
+.dropdown li:hover{
+    background-color: rgb(13, 131, 131);
+    color: aliceblue;
+    text-align: center;
+   
+}
+
+.select{
+    background-color: rgb(13, 131, 131);
+    color: aliceblue;
+    text-align: center;
+
+}
+
+
+.largePlayBtn{
+    position: absolute;
+    top:0%;
+    left:0%;
+    color:rgb(255, 255, 255);
+    font-size: 8rem;
+    /* border-radius: 20px;
+    padding: 10px 20px;
+    */
+    /* box-shadow: inset 0 0 3px 3px white;  */
+    z-index: 1;
+
+    width: 100%;
+    height:81.3%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+   
+}
+.largePlayBtn i{
+    position: absolute;
+    top:35%;
+    left:50%;
+}

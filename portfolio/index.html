@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+    <nav>
+        <a href="#" id="brand-name">Honeshwar Thakur</a>
+        <a href="#navbar-items" id="hamburg"><i class="fa fa-bars"></i></a>
+        <ul id="navbar-items" class="navbar-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="mailto:st566654@gamil.com?subject=contact&body=dkls">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+       <div class="intro-message">
+            <h1>Hello, I'm Honeshwar Thakur</h1>
+            <p>Software Developer, Technology enthusiast, EE Engineer.</p>
+       </div>
+        <nav class="social-media-links">
+            <li class="remove-list-style">
+                <a href="" class="remove-anchor-style"><i class="space fa fa-file-text-o"></i>Download Resume</a>
+            </li>
+            <li class="remove-list-style">
+                <a href="" class="remove-anchor-style"><i class="space fa fa-twitter fa-fw"></i>Twitter</a>
+            </li>
+            <li class="remove-list-style">
+                <a href="" class="remove-anchor-style"><i class="space fa fa-fire fa-lg fa-fw"></i>FreeCodeCamp</a>
+            </li>
+            <li class="remove-list-style">
+                <a href="" class="remove-anchor-style"> <i class="space fa fa-github fa-lg fa-fw"></i>Github</a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About</h3>
+            <article>
+                <img src="./2021-08-16.jpg" alt="profile picture" id="profile-picture">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim amet ea nobis hic doloribus possimus modi maxime. Quos sed natus harum, voluptatum vitae reiciendis quidem? Perferendis accusamus recusandae consectetur.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim amet ea nobis hic doloribus possimus modi maxime. Quos sed natus harum, voluptatum vitae reiciendis quidem? Perferendis accusamus recusandae consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim amet ea nobis hic doloribus possimus modi maxime. Quos sed natus harum, voluptatum vitae reiciendis quidem? Perferendis accusamus recusandae consectetur.</p>
+            </article>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h3>
+            <article>
+                <p>below are some of my selected work</p>
+                <div class="box">
+                    <div  class="card">
+                        <img src="./2021-08-16.jpg" alt="picture" >
+                        <div>
+                            <h4>nsc</h4>
+                            <p>asjcnlasn,sad</p>
+                        </div>
+                       
+                    </div>
+                    <div  class="card">
+                        <img src="./2021-08-16.jpg" alt="picture" >
+                        <div>
+                            <h4>nsc</h4>
+                            <p>asjcnlasn,sad</p>
+                        </div>
+                    </div>
+                    <div  class="card">
+                        <img src="./2021-08-16.jpg" alt="picture" >
+                        <div>
+                            <h4>nsc</h4>
+                            <p>asjcnlasn,sad</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer> 
+        <div>
+            <h2>Got a WordPress site and need some help?</h3>
+                <a href="mailto:st566654@gamil.com?subject=contact&body=dkls">Say hi,Contact</a>        
+        </div>
+       <ul id="navbar-items" class="navbar-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="mailto:st566654@gamil.com?subject=contact&body=dkls">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f595980e36.js" crossorigin="anonymous"></script>
+    <script>
+        const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // matchMedia("(max-height: 480px)").matches);
+
+        console.log(isDarkMode);
+        if(isDarkMode){
+            // document.body.classList.add("dark");
+            // document.body.classList.add("light");
+            document.body.classList.toggle("dark");
+        }else{
+            document.body.classList.add("light");
+        }
+
+    </script>
+</body>
+</html>
