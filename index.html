@@ -5,22 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Projects</title>
-    <style>
-        div{
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        h1{
-            text-shadow: 0 0 5px ;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/f595980e36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div id="heading">
         <h1>Mini Projects</h1>
     </div>
+
+    <section id="projects">
+        <article class="project-item" >
+            <div class="project-image" id="project-image1">
+                <div class="project-image-wrapper-container" title="click Me to see project in new tab" data-project-link="https://honeshwar.github.io/mini-projects/portfolio/""></div>
+            </div>
+            <div class="project-details">
+                <h2 class="project-heading">Portfolio 1</h2>
+            </div>
+        </article>
+        <article class="project-item" >
+            <div class="project-image" id="project-image2">
+                <div class="project-image-wrapper-container" title="click Me to see project in new tab"  data-project-link="https://honeshwar.github.io/mini-projects/video%20player/"></div>
+            </div>
+            <div class="project-details">
+                <h2 class="project-heading">video Player</h2>
+               </div>
+        </article>
+        <article class="project-item" >
+            <div class="project-image" id="project-image3" >
+                <div class="project-image-wrapper-container" title="click Me to see project in new tab" data-project-link="https://honeshwar.github.io/mini-projects/Portfolio2/pages"></div>
+            </div>
+            <div class="project-details">
+                <h2 class="project-heading">Portfolio 2</h2>
+            </div>
+        </article>
+        <article class="project-item" >
+            <div class="project-image" id="project-image4">
+                <div class="project-image-wrapper-container" title="click Me to see project in new tab" data-project-link="https://honeshwar.github.io/mini-projects/weather/"></div>
+            </div>
+            <div class="project-details">
+                <h2 class="project-heading">Weather</h2>
+            </div>
+        </article>
+
+    </section>
+
+    <footer id="footer">
+        <nav id="footer-navigation">
+            <ul id="footer-navigation-list">
+                <li class="footer-navigation-item">
+                    <a target="_blank" href="https://www.instagram.com" class="footer-navigation-item-link ">
+                        <i class="fa fa-instagram pink"></i>
+                    </a>
+                </li>
+                <li class="footer-navigation-item"><a target="_blank" href="https://www.linkedin.com/in/honeshwar-996374240" class="footer-navigation-item-link">
+                    <i class="fa fa-linkedin-square blue"></i>
+                </a></li>
+                <li class="footer-navigation-item">
+                    <a target="_blank" href="https://github.com/honeshwar" class="footer-navigation-item-link">
+                    <i class="fa fa-github-square black"></i>
+                </a></li>
+                <li class="footer-navigation-item"><a target="_blank" href="mailto:st566654@gmail.com?subject=About Portoflio&body=" class="footer-navigation-item-link">
+                    <i class="fa fa-address-book-o phone"></i>
+                </a></li>
+            </ul>
+        </nav>
+        <p id="copyright">Copyright &copy;2023 All rights reserved </p>
+    </footer>
+
+    <script>
+        //fetch all element form dom
+        const projects = document.getElementsByClassName('project-image-wrapper-container');
+
+        for (const element of projects) {
+            element.onclick=function (e) {
+                console.log(e.target,e);
+                const projectLink = e.target.dataset.projectLink;
+                console.log(projectLink);
+                // location.href=projectLink;
+                // to open link in new tab  window.open(URL,target);//by default target = _blank
+                window.open(projectLink,'_blank');
+            }
+        }
+    </script>
 </body>
 </html>
