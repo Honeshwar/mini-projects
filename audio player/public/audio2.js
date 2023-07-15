@@ -402,3 +402,14 @@ another we can set at time when we change current time of audio so it show like 
 mousemove we can CREATE OWN MANUALLY DRAG FEATURE
 --> PARENT CONTAINER TOWARD MOVE ,offsetX USE
 */
+
+
+//step to create player
+/**
+ * 1. create audio element
+ * 2. using audio obj time manage
+ * 3. first create an func convert time/duration if track in min:sec
+ * 4. use timeUpdate event to change timerStart with currentTime of audio change
+  
+    draggable slider bar is an functionality
+*/
